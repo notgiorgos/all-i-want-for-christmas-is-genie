@@ -18,6 +18,17 @@ def parse_input(file_path: str):
     return left_list, right_list
 
 
+def sort_lists(left_list, right_list):
+    """
+    Sorts the two lists in ascending order.
+
+    :param left_list: List of integers (the 'left' list).
+    :param right_list: List of integers (the 'right' list).
+    :return: A tuple of two sorted lists (sorted_left, sorted_right).
+    """
+    pass
+
+
 def solve_part_one(left_list, right_list):
     """
     Computes the total distance between the two lists after they are sorted.
