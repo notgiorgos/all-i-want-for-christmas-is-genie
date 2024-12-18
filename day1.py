@@ -9,14 +9,11 @@ def parse_input(file_path: str):
     left_list = []
     right_list = []
 
-    # Placeholder logic for reading/parsing the file
-    # with open(file_path, 'r') as f:
-    #     for line in f:
-    #         # Typically, you'd parse each line and separate the "left" and "right" integers.
-    #         # Example: left_str, right_str = line.split()
-    #         # left_list.append(int(left_str))
-    #         # right_list.append(int(right_str))
-    pass
+    with open(file_path, 'r') as f:
+        for line in f:
+            left_str, right_str = line.split('\t')
+            left_list.append(int(left_str))
+            right_list.append(int(right_str))
 
     return left_list, right_list
 
